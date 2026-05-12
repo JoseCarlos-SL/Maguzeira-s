@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maguzeira's Store — Apple Premium Reseller</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600;700&family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo">
+        
+        <div class="logo-text">
+          <span class="logo-name">Maguzeira's</span>
+          <span class="logo-store">STORE</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#inicio">Início</a>
+        <a href="#iphone">iPhone</a>
+        <a href="#acessorios">Acessórios</a>
+        <a href="#dispositivos">Dispositivos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <a href="#inicio" class="logo">
+        <svg class="apple-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814 1000" fill="white" width="22" height="22">
+          <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-42.4-150.3-109.9C114.4 766.5 69 612.3 69 462.5c0-250.2 163.1-382.7 323.4-382.7 86.4 0 158.4 56.8 212.7 56.8 52.4 0 135.4-60.9 214.3-60.9 33.4 0 121.9 2.3 185.2 87.4zm-198.4-184c31.3-50.4 52.4-107.7 52.4-165s-1.3-116.2-6.4-148.8c-47.8 2.3-103.7 31.8-136.7 68.8-24.3 27.5-49.5 75.6-49.5 131.2s1.9 113.7 6.4 146.9c49.5 4.5 97.4-25.9 133.8-32.7z"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Maguzeira's</span>
+          <span class="logo-store">STORE</span>
+        </div>
+      </a>
+      <button class="close-menu" id="closeMenu" aria-label="Fechar menu">✕</button>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="#inicio" class="mobile-nav-link">início</a>
+      <a href="#iphone" class="mobile-nav-link">iphone</a>
+      <a href="#acessorios" class="mobile-nav-link">acessórios</a>
+      <a href="#dispositivos" class="mobile-nav-link">dispositivos</a>
+      <a href="#contato" class="mobile-nav-link">contato</a>
+    </nav>
+
+    <div class="mobile-social">
+      <a href="https://instagram.com/maguzeiras.store" target="_blank" aria-label="Instagram" class="social-icon-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://tiktok.com/@maguzeiras.store" target="_blank" aria-label="TikTok" class="social-icon-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.84 1.56V6.79a4.85 4.85 0 01-1.07-.1z"/></svg>
+      </a>
+      <a href="https://x.com/maguzeiras" target="_blank" aria-label="X / Twitter" class="social-icon-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.732-8.853L2.25 2.25H8.08l4.261 5.632 5.903-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <p class="hero-label">APPLE PREMIUM RESELLER</p>
+      <h1 class="hero-title">
+        Maguzeira's<br />
+        <span class="hero-blue">Store</span>
+      </h1>
+      <p class="hero-desc">
+        Produtos Apple originais com a melhor experiência<br />
+        de compra. iPhone, acessórios e muito mais.
+      </p>
+      <div class="hero-buttons">
+        <a href="#iphone" class="btn btn-white">Ver Produtos</a>
+        <a href="#contato" class="btn btn-outline">Contato</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://www.apple.com/v/iphone-16-pro/b/images/overview/design/design_glass_titanium__bmouh8qe56oy_large.jpg"
+           alt="iPhone 16 Pro"
+           onerror="this.style.display='none'" />
+      <div class="hero-phone-fallback">
+        <div class="phone-mock">
+          <div class="phone-cameras">
+            <div class="cam"></div><div class="cam"></div><div class="cam"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator"></div>
+  </section>
+
+  <!-- IPHONE -->
+  <section id="iphone" class="section">
+    <div class="section-header">
+      <p class="section-label">LINHA IPHONE</p>
+      <h2 class="section-title">iPhone 16</h2>
+      <p class="section-desc">A nova era da inteligência Apple. Design em titânio, chip poderoso e câmera profissional.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="cards-grid cards-3">
+
+      <div class="product-card" data-tags="Chip A18 Pro,Câmera 48MP,Display ProMotion,Titânio">
+        <div class="card-image">
+          <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-3inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490032"
+               alt="iPhone 16 Pro"
+               onerror="this.src='https://images.unsplash.com/photo-1696461598894-1d6d4bbaa3cc?w=600&q=80'" />
+          <div class="card-tags"></div>
+        </div>
+        <div class="card-info">
+          <h3>iPhone 16 Pro</h3>
+          <p>A partir de R$ 8.999</p>
+        </div>
+      </div>
+
+      <div class="product-card featured" data-tags="Chip A18 Pro,Câmera 48MP,Tela 6.9&quot;,Titânio">
+        <div class="card-image">
+          <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-finish-select-202409-6-9inch-deserttatanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490046"
+               alt="iPhone 16 Pro Max"
+               onerror="this.src='https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=600&q=80'" />
+          <div class="card-tags"></div>
+        </div>
+        <div class="card-info">
+          <h3>iPhone 16 Pro Max</h3>
+          <p>A partir de R$ 10.499</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-tags="Chip A18,Câmera 48MP,Botão Câmera,USB-C">
+        <div class="card-image">
+          <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723811619523"
+               alt="iPhone 16"
+               onerror="this.src='https://images.unsplash.com/photo-1695048566437-7f6f1258ec9c?w=600&q=80'" />
+          <div class="card-tags"></div>
+        </div>
+        <div class="card-info">
+          <h3>iPhone 16</h3>
+          <p>A partir de R$ 7.299</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACESSÓRIOS -->
+  <section id="acessorios" class="section">
+    <div class="section-header">
+      <p class="section-label">ACESSÓRIOS</p>
+      <h2 class="section-title">Essenciais Apple</h2>
+      <p class="section-desc">Carregadores, fones e tudo que complementa seu ecossistema Apple.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="cards-grid cards-2">
+
+      <div class="product-card" data-tags="MagSafe,USB-C,Carregamento 15W,Braided Cable">
+        <div class="card-image card-image-dark">
+          <div class="magsafe-visual">
+            <div class="magsafe-ring"></div>
+            <div class="magsafe-cable"></div>
+          </div>
+          <div class="card-tags"></div>
+        </div>
+        <div class="card-info">
+          <h3>MagSafe &amp; Cabos</h3>
+          <p>Carregamento rápido</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-tags="ANC Ativo,Chip H2,Áudio Espacial,Resistente à água">
+        <div class="card-image card-image-dark">
+          <div class="airpods-visual">
+            <div class="airpods-case">
+              <div class="case-lid"></div>
+              <div class="case-body">
+                <div class="case-led"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-tags"></div>
+        </div>
+        <div class="card-info">
+          <h3>AirPods Pro 2</h3>
+          <p>A partir de R$ 1.899</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DISPOSITIVOS -->
+  <section id="dispositivos" class="section">
+    <div class="section-header">
+      <p class="section-label">DISPOSITIVOS</p>
+      <h2 class="section-title">Ecossistema Apple</h2>
+      <p class="section-desc">Apple Watch, MacBook e todo o ecossistema Apple que você precisa.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="cards-grid cards-2">
+
+      <div class="product-card" data-tags="Caixa Titânio,GPS + Celular,Bateria 60h,Tela sempre ativa">
+        <div class="card-image">
+          <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQDY3ref_VW_34FR+watch-case-49-titanium-ultra2_VW_34FR+watch-band-49-trail-loop-m-l-black-gray-ultra2_VW_34FR?wid=700&hei=700&trim=1&fmt=p-jpg&qlt=80"
+               alt="Apple Watch Ultra 2"
+               onerror="this.src='https://images.unsplash.com/photo-1696561543555-ececcd1e6e9f?w=600&q=80'" />
+          <div class="card-tags"></div>
+        </div>
+        <div class="card-info">
+          <h3>Apple Watch Ultra 2</h3>
+          <p>A partir de R$ 5.999</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-tags="Chip M4 Pro,Tela Liquid Retina,18h Bateria,Space Black">
+        <div class="card-image card-image-dark">
+          <div class="macbook-visual">
+            <div class="mb-screen">
+              <div class="mb-notch"></div>
+              <div class="mb-content">
+                <div class="mb-line"></div>
+                <div class="mb-line short"></div>
+                <div class="mb-line"></div>
+              </div>
+            </div>
+            <div class="mb-base"></div>
+          </div>
+          <div class="card-tags"></div>
+        </div>
+        <div class="card-info">
+          <h3>MacBook Pro</h3>
+          <p>A partir de R$ 14.999</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section section-contact">
+    <div class="section-header">
+      <p class="section-label">FALE CONOSCO</p>
+      <h2 class="section-title">Entre em Contato</h2>
+      <p class="section-desc">Tire suas dúvidas, faça encomendas ou consulte disponibilidade dos produtos.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-item">
+        <p class="contact-label">WHATSAPP</p>
+        <p class="contact-value">Envie uma mensagem</p>
+        <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-white btn-full">WhatsApp</a>
+      </div>
+      <div class="contact-divider"></div>
+      <div class="contact-item">
+        <p class="contact-label">INSTAGRAM</p>
+        <p class="contact-value">@maguzeiras.store</p>
+        <a href="https://instagram.com/maguzeiras.store" target="_blank" class="btn btn-dark btn-full">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814 1000" fill="white" width="28" height="28">
+            <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-42.4-150.3-109.9C114.4 766.5 69 612.3 69 462.5c0-250.2 163.1-382.7 323.4-382.7 86.4 0 158.4 56.8 212.7 56.8 52.4 0 135.4-60.9 214.3-60.9 33.4 0 121.9 2.3 185.2 87.4zm-198.4-184c31.3-50.4 52.4-107.7 52.4-165s-1.3-116.2-6.4-148.8c-47.8 2.3-103.7 31.8-136.7 68.8-24.3 27.5-49.5 75.6-49.5 131.2s1.9 113.7 6.4 146.9c49.5 4.5 97.4-25.9 133.8-32.7z"/>
+          </svg>
+          <span>Maguzeira's Store</span>
+        </div>
+        <p class="footer-tagline">Sua loja Apple premium. Produtos originais com garantia e atendimento personalizado.</p>
+      </div>
+
+      <div class="footer-nav">
+        <p class="footer-nav-title">Navegação</p>
+        <a href="#inicio">Início</a>
+        <a href="#iphone">iPhone</a>
+        <a href="#acessorios">Acessórios</a>
+        <a href="#dispositivos">Dispositivos</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div class="footer-social-col">
+        <p class="footer-nav-title">Redes Sociais</p>
+        <div class="footer-social-icons">
+          <a href="https://instagram.com/maguzeiras.store" target="_blank" aria-label="Instagram" class="social-icon-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://tiktok.com/@maguzeiras.store" target="_blank" aria-label="TikTok" class="social-icon-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.84 1.56V6.79a4.85 4.85 0 01-1.07-.1z"/></svg>
+          </a>
+          <a href="https://x.com/maguzeiras" target="_blank" aria-label="X / Twitter" class="social-icon-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.732-8.853L2.25 2.25H8.08l4.261 5.632 5.903-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Maguzeira's Store. Todos os direitos reservados.</p>
+      <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
