@@ -100,8 +100,24 @@
     <div class="scroll-indicator"></div>
   </section>
 
+  <!-- SEARCH & FILTER BAR -->
+  <section class="store-controls">
+    <div class="controls-inner">
+      <div class="search-box">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="productSearch" placeholder="Buscar produtos, chips, cores..." aria-label="Buscar produtos" />
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-category="all">Todos</button>
+        <button class="filter-tab" data-category="iphone">iPhones</button>
+        <button class="filter-tab" data-category="acessorios">Acessórios</button>
+        <button class="filter-tab" data-category="dispositivos">Outros Dispositivos</button>
+      </div>
+    </div>
+  </section>
+
   <!-- IPHONE -->
-  <section id="iphone" class="section">
+  <section id="iphone" class="section" data-section-category="iphone">
     <div class="section-header">
       <p class="section-label">LINHA IPHONE</p>
       <h2 class="section-title">iPhone 16</h2>
@@ -111,7 +127,7 @@
 
     <div class="cards-grid cards-3">
 
-      <div class="product-card" data-tags="Chip A18 Pro,Câmera 48MP,Display ProMotion,Titânio">
+      <div class="product-card" data-category="iphone" data-tags="Chip A18 Pro,Câmera 48MP,Display ProMotion,Titânio">
         <div class="card-image">
           <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-3inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490032"
                alt="iPhone 16 Pro"
@@ -119,12 +135,22 @@
           <div class="card-tags"></div>
         </div>
         <div class="card-info">
-          <h3>iPhone 16 Pro</h3>
-          <p>A partir de R$ 8.999</p>
+          <div class="card-title-row">
+            <h3>iPhone 16 Pro</h3>
+            <span class="active-color-name">Titânio Natural</span>
+          </div>
+          <p class="card-price" data-price="8999">A partir de R$ 8.999</p>
+          <div class="color-picker" data-target="image">
+            <span class="color-dot active" data-color="Titânio Natural" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-3inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490032" style="background: #a39f98;" title="Titânio Natural"></span>
+            <span class="color-dot" data-color="Titânio Deserto" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-3inch-deserttitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490040" style="background: #c2b29f;" title="Titânio Deserto"></span>
+            <span class="color-dot" data-color="Titânio Branco" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-3inch-whitetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490036" style="background: #e3e4e5;" title="Titânio Branco"></span>
+            <span class="color-dot" data-color="Titânio Preto" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-3inch-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490034" style="background: #3c3d3a;" title="Titânio Preto"></span>
+          </div>
+          <button class="btn-add-cart">Adicionar ao Orçamento</button>
         </div>
       </div>
 
-      <div class="product-card" data-tags="Chip A18 Pro,Câmera 48MP,Tela 6.9&quot;,Titânio">
+      <div class="product-card" data-category="iphone" data-tags="Chip A18 Pro,Câmera 48MP,Tela 6.9&quot;,Titânio">
         <div class="card-image">
           <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-finish-select-202409-6-9inch-deserttatanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490046"
                alt="iPhone 16 Pro Max"
@@ -132,12 +158,22 @@
           <div class="card-tags"></div>
         </div>
         <div class="card-info">
-          <h3>iPhone 16 Pro Max</h3>
-          <p>A partir de R$ 10.499</p>
+          <div class="card-title-row">
+            <h3>iPhone 16 Pro Max</h3>
+            <span class="active-color-name">Titânio Deserto</span>
+          </div>
+          <p class="card-price" data-price="10499">A partir de R$ 10.499</p>
+          <div class="color-picker" data-target="image">
+            <span class="color-dot active" data-color="Titânio Deserto" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-finish-select-202409-6-9inch-deserttatanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490046" style="background: #c2b29f;" title="Titânio Deserto"></span>
+            <span class="color-dot" data-color="Titânio Natural" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-finish-select-202409-6-9inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490044" style="background: #a39f98;" title="Titânio Natural"></span>
+            <span class="color-dot" data-color="Titânio Branco" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-finish-select-202409-6-9inch-whitetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490042" style="background: #e3e4e5;" title="Titânio Branco"></span>
+            <span class="color-dot" data-color="Titânio Preto" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-finish-select-202409-6-9inch-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1725297490048" style="background: #3c3d3a;" title="Titânio Preto"></span>
+          </div>
+          <button class="btn-add-cart">Adicionar ao Orçamento</button>
         </div>
       </div>
 
-      <div class="product-card" data-tags="Chip A18,Câmera 48MP,Botão Câmera,USB-C">
+      <div class="product-card" data-category="iphone" data-tags="Chip A18,Câmera 48MP,Botão Câmera,USB-C">
         <div class="card-image">
           <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723811619523"
                alt="iPhone 16"
@@ -145,8 +181,19 @@
           <div class="card-tags"></div>
         </div>
         <div class="card-info">
-          <h3>iPhone 16</h3>
-          <p>A partir de R$ 7.299</p>
+          <div class="card-title-row">
+            <h3>iPhone 16</h3>
+            <span class="active-color-name">Ultramarine</span>
+          </div>
+          <p class="card-price" data-price="7299">A partir de R$ 7.299</p>
+          <div class="color-picker" data-target="image">
+            <span class="color-dot active" data-color="Ultramarine" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723811619523" style="background: #3b5f8f;" title="Ultramarine"></span>
+            <span class="color-dot" data-color="Teal" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-teal?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723811619213" style="background: #84a29a;" title="Teal"></span>
+            <span class="color-dot" data-color="Rosa" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-pink?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723811619379" style="background: #e9b3b8;" title="Rosa"></span>
+            <span class="color-dot" data-color="Branco" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-white?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723811619623" style="background: #f1f2ed;" title="Branco"></span>
+            <span class="color-dot" data-color="Preto" data-img="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-black?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723811619854" style="background: #363739;" title="Preto"></span>
+          </div>
+          <button class="btn-add-cart">Adicionar ao Orçamento</button>
         </div>
       </div>
 
@@ -154,7 +201,7 @@
   </section>
 
   <!-- ACESSÓRIOS -->
-  <section id="acessorios" class="section">
+  <section id="acessorios" class="section" data-section-category="acessorios">
     <div class="section-header">
       <p class="section-label">ACESSÓRIOS</p>
       <h2 class="section-title">Essenciais Apple</h2>
@@ -164,7 +211,7 @@
 
     <div class="cards-grid cards-2">
 
-      <div class="product-card" data-tags="MagSafe,USB-C,Carregamento 15W,Braided Cable">
+      <div class="product-card" data-category="acessorios" data-tags="MagSafe,USB-C,Carregamento 15W,Braided Cable">
         <div class="card-image card-image-dark">
           <div class="magsafe-visual">
             <div class="magsafe-ring"></div>
@@ -173,12 +220,15 @@
           <div class="card-tags"></div>
         </div>
         <div class="card-info">
-          <h3>MagSafe &amp; Cabos</h3>
-          <p>Carregamento rápido</p>
+          <div class="card-title-row">
+            <h3>MagSafe &amp; Cabos</h3>
+          </div>
+          <p class="card-price" data-price="299">A partir de R$ 299</p>
+          <button class="btn-add-cart">Adicionar ao Orçamento</button>
         </div>
       </div>
 
-      <div class="product-card" data-tags="ANC Ativo,Chip H2,Áudio Espacial,Resistente à água">
+      <div class="product-card" data-category="acessorios" data-tags="ANC Ativo,Chip H2,Áudio Espacial,Resistente à água">
         <div class="card-image card-image-dark">
           <div class="airpods-visual">
             <div class="airpods-case">
@@ -191,8 +241,11 @@
           <div class="card-tags"></div>
         </div>
         <div class="card-info">
-          <h3>AirPods Pro 2</h3>
-          <p>A partir de R$ 1.899</p>
+          <div class="card-title-row">
+            <h3>AirPods Pro 2</h3>
+          </div>
+          <p class="card-price" data-price="1899">A partir de R$ 1.899</p>
+          <button class="btn-add-cart">Adicionar ao Orçamento</button>
         </div>
       </div>
 
@@ -200,7 +253,7 @@
   </section>
 
   <!-- DISPOSITIVOS -->
-  <section id="dispositivos" class="section">
+  <section id="dispositivos" class="section" data-section-category="dispositivos">
     <div class="section-header">
       <p class="section-label">DISPOSITIVOS</p>
       <h2 class="section-title">Ecossistema Apple</h2>
@@ -210,7 +263,7 @@
 
     <div class="cards-grid cards-2">
 
-      <div class="product-card" data-tags="Caixa Titânio,GPS + Celular,Bateria 60h,Tela sempre ativa">
+      <div class="product-card" data-category="dispositivos" data-tags="Caixa Titânio,GPS + Celular,Bateria 60h,Tela sempre ativa">
         <div class="card-image">
           <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQDY3ref_VW_34FR+watch-case-49-titanium-ultra2_VW_34FR+watch-band-49-trail-loop-m-l-black-gray-ultra2_VW_34FR?wid=700&hei=700&trim=1&fmt=p-jpg&qlt=80"
                alt="Apple Watch Ultra 2"
@@ -218,12 +271,15 @@
           <div class="card-tags"></div>
         </div>
         <div class="card-info">
-          <h3>Apple Watch Ultra 2</h3>
-          <p>A partir de R$ 5.999</p>
+          <div class="card-title-row">
+            <h3>Apple Watch Ultra 2</h3>
+          </div>
+          <p class="card-price" data-price="5999">A partir de R$ 5.999</p>
+          <button class="btn-add-cart">Adicionar ao Orçamento</button>
         </div>
       </div>
 
-      <div class="product-card" data-tags="Chip M4 Pro,Tela Liquid Retina,18h Bateria,Space Black">
+      <div class="product-card" data-category="dispositivos" data-tags="Chip M4 Pro,Tela Liquid Retina,18h Bateria,Space Black">
         <div class="card-image card-image-dark">
           <div class="macbook-visual">
             <div class="mb-screen">
@@ -239,11 +295,66 @@
           <div class="card-tags"></div>
         </div>
         <div class="card-info">
-          <h3>MacBook Pro</h3>
-          <p>A partir de R$ 14.999</p>
+          <div class="card-title-row">
+            <h3>MacBook Pro</h3>
+          </div>
+          <p class="card-price" data-price="14999">A partir de R$ 14.999</p>
+          <button class="btn-add-cart">Adicionar ao Orçamento</button>
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="section section-faq">
+    <div class="section-header">
+      <p class="section-label">DÚVIDAS FREQUENTES</p>
+      <h2 class="section-title">Perguntas Frequentes</h2>
+      <p class="section-desc">Tudo que você precisa saber sobre a garantia, originalidade e formas de entrega.</p>
+      <div class="section-divider"></div>
+    </div>
+    
+    <div class="faq-accordion-container">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Os produtos são originais e têm garantia?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Sim! Todos os nossos produtos são 100% originais, lacrados de fábrica e possuem 1 ano de garantia oficial mundial da Apple, válida em qualquer autorizada ou Apple Store.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Como funciona a entrega e o frete?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Realizamos entregas seguras via motoboy para toda a nossa região metropolitana (com pagamento no ato da entrega) e enviamos via Correios (Sedex com seguro) para todo o Brasil.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Quais são as formas de pagamento?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Aceitamos pagamento via PIX (com desconto especial) e parcelamento em até 12x ou 18x nos cartões de crédito (consulte as taxas de parcelamento pelo nosso WhatsApp).</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Como faço para encomendar um modelo específico?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Se você procura um modelo, cor ou capacidade que não está listado a pronta entrega, entre em contato pelo nosso WhatsApp. Nós encomendamos diretamente com prazos rápidos de importação.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -314,6 +425,83 @@
       <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
     </div>
   </footer>
+
+  <!-- FLOATING CART BUTTON -->
+  <button class="cart-floating-btn" id="cartToggle" aria-label="Ver Carrinho">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="22" height="22">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+    </svg>
+    <span class="cart-badge" id="cartBadge">0</span>
+  </button>
+
+  <!-- SHOPPING CART DRAWER -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h2>Seu Orçamento</h2>
+      <button class="close-cart" id="closeCart" aria-label="Fechar carrinho">✕</button>
+    </div>
+    
+    <div class="cart-drawer-body">
+      <div class="cart-empty-message" id="cartEmptyMessage">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" width="48" height="48">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        </svg>
+        <p>Seu orçamento está vazio.</p>
+        <p class="empty-subtext">Adicione produtos para solicitar preços e disponibilidade.</p>
+      </div>
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Dinamicamente inserido -->
+      </div>
+    </div>
+    
+    <div class="cart-drawer-footer" id="cartDrawerFooter">
+      <div class="cart-summary-row">
+        <span>Subtotal Estimado</span>
+        <span class="cart-total-price" id="cartTotalVal">R$ 0</span>
+      </div>
+      <p class="cart-footer-notice">O preço final e disponibilidade serão confirmados pelo atendente no WhatsApp.</p>
+      <button class="btn btn-white btn-full btn-checkout-wa" id="btnCheckoutWA">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" width="16" height="16" style="margin-right: 8px; vertical-align: middle;">
+          <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+        Enviar Orçamento
+      </button>
+    </div>
+  </div>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="quickview-modal" id="quickViewModal">
+    <div class="modal-content">
+      <button class="close-modal" id="closeModal" aria-label="Fechar visualização rápida">✕</button>
+      <div class="modal-grid">
+        <div class="modal-media" id="modalMedia">
+          <!-- Dinamicamente inserido -->
+        </div>
+        <div class="modal-info">
+          <div class="modal-header-row">
+            <span class="modal-label" id="modalLabel">CATEGORIA</span>
+            <h2 class="modal-title" id="modalTitle">Nome do Produto</h2>
+          </div>
+          <p class="modal-price" id="modalPrice">R$ 0.000</p>
+          
+          <div class="modal-specs">
+            <h3>Destaques</h3>
+            <ul id="modalSpecsList">
+              <!-- Dinamicamente inserido -->
+            </ul>
+          </div>
+          
+          <div class="modal-options-section" id="modalOptionsSec">
+            <!-- Dinamicamente inserido se houver cores -->
+          </div>
+
+          <div class="modal-actions-row">
+            <button class="btn btn-white btn-full" id="btnModalAddCart">Adicionar ao Orçamento</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
