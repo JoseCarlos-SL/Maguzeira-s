@@ -53,19 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ----------------------------------------------------------
-     3. HEADER SCROLL OPACITY
+     3. HEADER SCROLL — add .scrolled class when page is scrolled
   ---------------------------------------------------------- */
   const header = document.getElementById('header');
 
   function onScroll() {
     if (window.scrollY > 20) {
-      header.style.background = 'rgba(5, 5, 5, 0.9)';
+      header.classList.add('scrolled');
     } else {
-      header.style.background = 'rgba(5, 5, 5, 0.75)';
+      header.classList.remove('scrolled');
     }
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll(); // run once on load (in case of mid-page refresh)
 
 
   /* ----------------------------------------------------------
